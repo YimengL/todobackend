@@ -43,4 +43,13 @@ $ docker-compose run test
 $ docker-compose up release # build + run
 ```
 
+#### Tear down the running docker image, and remove the volume
+```shell script
+$ docker-compose down -v
+```
+
+#### MYSQL DB migration
+```shell script
+$ docker-compose up migrate
+```
 
