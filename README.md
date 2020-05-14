@@ -27,3 +27,20 @@ $ docker run -it --rm -p 8000:8000 todobackend-release uwsgi \
 --http=0.0.0.0:8000 --module=todobackend.wsgi --master
 ```
 
+*****
+
+### Docker Compose
+
+#### Use docker-compose to build and run the test
+
+```shell script
+$ docker-compose build test
+$ docker-compose run test
+```
+
+#### Use docker-compose to run the release
+```shell script
+$ docker-compose up release # build + run
+```
+
+
