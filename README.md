@@ -53,3 +53,9 @@ $ docker-compose down -v
 $ docker-compose up migrate
 ```
 
+#### Copy the static file
+```shell script
+# do it before docker-compose up app
+$ docker-compose run app python3 manage.py collectstatic --no-input
+```
+
