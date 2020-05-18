@@ -59,3 +59,18 @@ $ docker-compose up migrate
 $ docker-compose run app python3 manage.py collectstatic --no-input
 ```
 
+#### Integration Test
+```shell script
+$ docker-compose up acceptance
+```
+
+*****
+
+### 使用Make来运行程序
+
+```shell script
+$ make test # run unit test
+$ make release # launch the app
+$ make clean # stop the app, clean the image
+```
+
